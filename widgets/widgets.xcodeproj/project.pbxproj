@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7BB61EDE2D653EDC009C9AAC /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3EAA8D2D592A2300BBBAAC /* WidgetKit.framework */; };
+		7BB61EDF2D653EDC009C9AAC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3EAA8F2D592A2300BBBAAC /* SwiftUI.framework */; };
+		7BB61EEE2D653EDD009C9AAC /* MExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7BB61EDD2D653EDC009C9AAC /* MExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7B3EAA6B2D59294600BBBAAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +27,47 @@
 			remoteGlobalIDString = 7B3EAA592D59294400BBBAAC;
 			remoteInfo = widgets;
 		};
+		7BB61EEC2D653EDD009C9AAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B3EAA522D59294400BBBAAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BB61EDC2D653EDC009C9AAC;
+			remoteInfo = MExtensionExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7B3EAAA62D592A2500BBBAAC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7BB61EEE2D653EDD009C9AAC /* MExtensionExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7B3EAA5A2D59294400BBBAAC /* widgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = widgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3EAA6A2D59294600BBBAAC /* widgetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = widgetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3EAA742D59294600BBBAAC /* widgetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = widgetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B3EAA8D2D592A2300BBBAAC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		7B3EAA8F2D592A2300BBBAAC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		7BB61EDD2D653EDC009C9AAC /* MExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7BB61EEF2D653EDD009C9AAC /* Exceptions for "MExtension" folder in "MExtensionExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7BB61EDC2D653EDC009C9AAC /* MExtensionExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7B3EAA5C2D59294400BBBAAC /* widgets */ = {
@@ -43,6 +83,14 @@
 		7B3EAA772D59294600BBBAAC /* widgetsUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = widgetsUITests;
+			sourceTree = "<group>";
+		};
+		7BB61EE02D653EDC009C9AAC /* MExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7BB61EEF2D653EDD009C9AAC /* Exceptions for "MExtension" folder in "MExtensionExtension" target */,
+			);
+			path = MExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +117,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7BB61EDA2D653EDC009C9AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB61EDF2D653EDC009C9AAC /* SwiftUI.framework in Frameworks */,
+				7BB61EDE2D653EDC009C9AAC /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +135,8 @@
 				7B3EAA5C2D59294400BBBAAC /* widgets */,
 				7B3EAA6D2D59294600BBBAAC /* widgetsTests */,
 				7B3EAA772D59294600BBBAAC /* widgetsUITests */,
+				7BB61EE02D653EDC009C9AAC /* MExtension */,
+				7B3EAA8C2D592A2300BBBAAC /* Frameworks */,
 				7B3EAA5B2D59294400BBBAAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +147,18 @@
 				7B3EAA5A2D59294400BBBAAC /* widgets.app */,
 				7B3EAA6A2D59294600BBBAAC /* widgetsTests.xctest */,
 				7B3EAA742D59294600BBBAAC /* widgetsUITests.xctest */,
+				7BB61EDD2D653EDC009C9AAC /* MExtensionExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7B3EAA8C2D592A2300BBBAAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B3EAA8D2D592A2300BBBAAC /* WidgetKit.framework */,
+				7B3EAA8F2D592A2300BBBAAC /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +171,12 @@
 				7B3EAA562D59294400BBBAAC /* Sources */,
 				7B3EAA572D59294400BBBAAC /* Frameworks */,
 				7B3EAA582D59294400BBBAAC /* Resources */,
+				7B3EAAA62D592A2500BBBAAC /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7BB61EED2D653EDD009C9AAC /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				7B3EAA5C2D59294400BBBAAC /* widgets */,
@@ -163,6 +234,28 @@
 			productReference = 7B3EAA742D59294600BBBAAC /* widgetsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7BB61EDC2D653EDC009C9AAC /* MExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BB61EF02D653EDD009C9AAC /* Build configuration list for PBXNativeTarget "MExtensionExtension" */;
+			buildPhases = (
+				7BB61ED92D653EDC009C9AAC /* Sources */,
+				7BB61EDA2D653EDC009C9AAC /* Frameworks */,
+				7BB61EDB2D653EDC009C9AAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7BB61EE02D653EDC009C9AAC /* MExtension */,
+			);
+			name = MExtensionExtension;
+			packageProductDependencies = (
+			);
+			productName = MExtensionExtension;
+			productReference = 7BB61EDD2D653EDC009C9AAC /* MExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +277,9 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 7B3EAA592D59294400BBBAAC;
 					};
+					7BB61EDC2D653EDC009C9AAC = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = 7B3EAA552D59294400BBBAAC /* Build configuration list for PBXProject "widgets" */;
@@ -203,6 +299,7 @@
 				7B3EAA592D59294400BBBAAC /* widgets */,
 				7B3EAA692D59294600BBBAAC /* widgetsTests */,
 				7B3EAA732D59294600BBBAAC /* widgetsUITests */,
+				7BB61EDC2D653EDC009C9AAC /* MExtensionExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +320,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7B3EAA722D59294600BBBAAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB61EDB2D653EDC009C9AAC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +357,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7BB61ED92D653EDC009C9AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +376,11 @@
 			isa = PBXTargetDependency;
 			target = 7B3EAA592D59294400BBBAAC /* widgets */;
 			targetProxy = 7B3EAA752D59294600BBBAAC /* PBXContainerItemProxy */;
+		};
+		7BB61EED2D653EDD009C9AAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BB61EDC2D653EDC009C9AAC /* MExtensionExtension */;
+			targetProxy = 7BB61EEC2D653EDD009C9AAC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -404,6 +520,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,6 +550,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,6 +636,60 @@
 			};
 			name = Release;
 		};
+		7BB61EF12D653EDD009C9AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5882QKM9XK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BD.widgets.MExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BB61EF22D653EDD009C9AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5882QKM9XK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BD.widgets.MExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +725,15 @@
 			buildConfigurations = (
 				7B3EAA852D59294600BBBAAC /* Debug */,
 				7B3EAA862D59294600BBBAAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BB61EF02D653EDD009C9AAC /* Build configuration list for PBXNativeTarget "MExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB61EF12D653EDD009C9AAC /* Debug */,
+				7BB61EF22D653EDD009C9AAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
